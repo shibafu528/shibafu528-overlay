@@ -1,0 +1,12 @@
+[Unit]
+Description = mirakc
+
+[Service]
+ExecStart = /usr/bin/mirakc -c /etc/mirakc.yml
+Restart = always
+Type = simple
+Environment = RUST_LOG=info
+
+[Install]
+WantedBy = multi-user.target
+

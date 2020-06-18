@@ -33,5 +33,5 @@ src_compile() {
 }
 
 src_install() {
-	cmake_src_install
+	dobin ${BUILD_DIR}/bin/mirakc-arib
 }

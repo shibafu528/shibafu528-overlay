@@ -265,6 +265,9 @@ src_install() {
 	dodir /var/lib/mirakc/epg
 	keepdir /var/lib/mirakc/epg
 
+	insinto /etc/mirakc
+	doins "${S}"/resources/strings.yml
+
 	fowners mirakc:mirakc /var/lib/mirakc
 	fperms 0750 /var/lib/mirakc
 

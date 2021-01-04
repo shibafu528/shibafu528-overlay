@@ -6,7 +6,7 @@ EAPI=7
 inherit cargo systemd user
 
 DESCRIPTION="A Mirakurun clone written in Rust"
-HOMEPAGE="https://github.com/masnagam/mirakc"
+HOMEPAGE="https://github.com/mirakc/mirakc"
 CRATES="
 actix-0.9.0
 actix-codec-0.2.0
@@ -192,7 +192,7 @@ winreg-0.6.2
 ws2_32-sys-0.2.1
 yaml-rust-0.4.3
 "
-SRC_URI="https://github.com/masnagam/mirakc/archive/${PV}.tar.gz -> ${P}.tar.gz
+SRC_URI="https://github.com/mirakc/mirakc/archive/${PV}.tar.gz -> ${P}.tar.gz
 $(cargo_crate_uris ${CRATES})"
 
 LICENSE="Apache-2.0 MIT"

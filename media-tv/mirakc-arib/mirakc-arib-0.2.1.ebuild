@@ -6,8 +6,8 @@ EAPI=7
 inherit autotools cmake
 
 DESCRIPTION="mirakc-tools for Japanese TV broadcast contents"
-HOMEPAGE="https://github.com/masnagam/mirakc-arib"
-SRC_URI="https://github.com/masnagam/mirakc-arib/archive/${PV}.tar.gz -> ${P}.tar.gz"
+HOMEPAGE="https://github.com/mirakc/mirakc-arib"
+SRC_URI="https://github.com/mirakc/mirakc-arib/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="Apache-2.0 MIT"
 SLOT="0"

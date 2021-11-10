@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=4
+EAPI=7
 inherit eutils
 
 DESCRIPTION="ARIB STD-B25 test implementation for understanding specs"
@@ -21,8 +21,9 @@ S=${WORKDIR}/pt1-c44e16dbb0e2
 
 src_prepare() {
 	cd ${WORKDIR}/pt1-c44e16dbb0e2/arib25/src
-	epatch "${FILESDIR}/${PV}/fix-bin-install.diff"
-	epatch "${FILESDIR}/${PV}/disable-ldconfig.diff"
+	eapply -p0 "${FILESDIR}/${PV}/fix-bin-install.diff"
+	eapply -p0 "${FILESDIR}/${PV}/disable-ldconfig.diff"
+	eapply_user
 }
 
 src_compile() {

@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=4
+EAPI=7
 inherit eutils mercurial autotools
 
 DESCRIPTION="(^o^)/"
@@ -19,6 +19,7 @@ DEPEND="virtual/pkgconfig
 RDEPEND="${DEPEND}"
 
 src_prepare() {
+	eapply_user
 	cd ${S}/recpt1
 	eaclocal -I .
 	eautoheader
